@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <div>
+      <router-link to="/">Go to 首页</router-link>
+      <router-link to="/foo">Go to Foo</router-link>
+      <router-link to="/bar">Go to ElementUI</router-link>
+    </div>
+    <!-- 承载路由，路由匹配到的组件显示在这里 -->
     <router-view/>
   </div>
 </template>
